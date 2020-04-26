@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MatuleviciusMarius/coaching.git/static/css/main.d1b05096.chunk.css",
+    "main.js": "/MatuleviciusMarius/coaching.git/static/js/main.b69b2820.chunk.js",
+    "main.js.map": "/MatuleviciusMarius/coaching.git/static/js/main.b69b2820.chunk.js.map",
+    "runtime-main.js": "/MatuleviciusMarius/coaching.git/static/js/runtime-main.ea2da0c8.js",
+    "runtime-main.js.map": "/MatuleviciusMarius/coaching.git/static/js/runtime-main.ea2da0c8.js.map",
+    "static/js/2.a2d077c3.chunk.js": "/MatuleviciusMarius/coaching.git/static/js/2.a2d077c3.chunk.js",
+    "static/js/2.a2d077c3.chunk.js.map": "/MatuleviciusMarius/coaching.git/static/js/2.a2d077c3.chunk.js.map",
+    "index.html": "/MatuleviciusMarius/coaching.git/index.html",
+    "precache-manifest.d9e3be3b2743e60411ebf1a160fdb2cb.js": "/MatuleviciusMarius/coaching.git/precache-manifest.d9e3be3b2743e60411ebf1a160fdb2cb.js",
+    "service-worker.js": "/MatuleviciusMarius/coaching.git/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/MatuleviciusMarius/coaching.git/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.a2d077c3.chunk.js.LICENSE.txt": "/MatuleviciusMarius/coaching.git/static/js/2.a2d077c3.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/MatuleviciusMarius/coaching.git/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea2da0c8.js",
+    "static/js/2.a2d077c3.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.b69b2820.chunk.js"
+  ]
+}
