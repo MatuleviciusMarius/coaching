@@ -1,0 +1,108 @@
+/* Global */
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+/* Header */
+header {
+  background: #dedede;
+  display: block;
+  padding: 16px 0 5px 0;
+  height: 5%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+nav li :hover {
+  color: goldenrod;
+  border-bottom: 1px solid goldenrod;
+  transition: 0.2s;
+}
+
+.logo {
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+/* Main Screen */
+
+.container {
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #dedede;
+  background-image: url("/photos/Juratenew.png");
+  height: 92.7%;
+}
+
+.container h1 {
+  padding-bottom: 11px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Prata", serif;
+  color: #393f43;
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+  position: relative;
+  top: 30%;
+}
+
+.container h2 {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Prata", serif;
+  color: #393f43;
+  font-size: 30px;
+  line-height: 50px;
+  position: relative;
+  top: 30%;
+}
+
+.container a {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Prata", serif;
+  text-decoration: none;
+  color: #393f43;
+  position: relative;
+  font-size: 20px;
+  top: 40%;
+  color: goldenrod;
+}
+
+.container a :hover {
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+  background-color: black;
+}
