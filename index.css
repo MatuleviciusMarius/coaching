@@ -69,7 +69,7 @@ nav li :hover {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #dedede;
-  background-image: url("/photos/Juratenew.png");
+  background-image: url("photos/Juratenew.png");
   height: 92.7%;
   overflow: hidden;
 }
@@ -121,7 +121,7 @@ nav li :hover {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: whitesmoke;
-  background-image: url("/photos/Jurate-1.jpg");
+  background-image: url("photos/Jurate-1.jpg");
   height: 100%;
   overflow: hidden;
 }
@@ -160,7 +160,7 @@ nav li :hover {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: whitesmoke;
-  background-image: url("/photos/Jurate-5.jpg");
+  background-image: url("photos/Jurate-5.jpg");
   height: 100%;
   overflow: hidden;
 }
