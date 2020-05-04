@@ -13,9 +13,29 @@
     />
     <link rel="shortcut icon" href="/photos/favicon.ico" />
     <title>Jūratė Lajauskaitė - Homo Confusus Coach</title>
+
+    <script>
+      var myNav;
+      window.onload = function () {
+        myNav = document.getElementById("nav");
+      };
+
+      window.onscroll = function () {
+        "use strict";
+        if (
+          document.body.scrollTop >= 50 ||
+          document.documentElement.scrollTop >= 50
+        ) {
+          myNav.classList.add("scroll");
+        } else {
+          myNav.classList.remove("scroll");
+        }
+      };
+    </script>
   </head>
+
   <body>
-    <header>
+    <header class="header" id="nav">
       <nav>
         <ul>
           <li class="logo">
@@ -24,27 +44,50 @@
           <li>
             <a href="aaa">Apie</a>
           </li>
-
           <li>
-            <a href="https://www.facebook.com/messages/t/jurate.lajauskaite"
-              >Susisiekti</a
+            <a
+              href="https://www.facebook.com/messages/t/jurate.lajauskaite"
+              target="blank"
+              >Pradėkime</a
             >
-          </li>
-          <li>
-            <a href="aaa">Kontaktai</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div class="container">
-      <h1>Hey,</h1>
-      <h2>Some random text</h2>
+    <div class="pagrindinis-container">
+      <h1>Kaučingas</h1>
+      <h2>aiškumo, aiškumo ir kažkastai kažkastai</h2>
       <a
         href="https://www.facebook.com/messages/t/jurate.lajauskaite"
         class="border-animation"
-        >SUSISIEKTI</a
+        >Pradėkime</a
       >
+    </div>
+
+    <div class="apie-container">
+      <h1>
+        <span style="color: #a89078;"> Jūratė </span>
+      </h1>
+      <h2>
+        Ericson Coaching International sertifikato koučerė <br />
+        ICF - International Coaching Federation Global Kažkas <br />
+        ICF Lithuania narė <br />
+        LUMA- Lietuvos Universitetų Moterų Asociacijos narė <br />
+        Daugiau (Nuoroda į Kažkas)
+      </h2>
+    </div>
+
+    <div class="pradekime-container">
+      <h1>
+        Mielieji, aš labai džiaugiuosi, <br />
+        kad jūs esate čia
+      </h1>
+
+      <h2>
+        Pradėkime mūsų pažintį, <br />
+        atraskime tai, kas mus artina
+      </h2>
     </div>
   </body>
 </html>
