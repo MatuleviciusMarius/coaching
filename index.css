@@ -39,17 +39,21 @@ nav li {
   display: inline-block;
   box-sizing: border-box;
 }
-nav a {
+nav a,
+button {
   padding: 10px;
   text-decoration: none;
   color: black;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  font-size: 17px;
+  border: none;
+  background: none;
 }
 
 nav li :hover {
   color: goldenrod;
-  border-bottom: 1px solid goldenrod;
+  border-bottom: 1px solid goldenrod !important;
   transition: 0.2s;
 }
 

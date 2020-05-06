@@ -12,12 +12,19 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="photos/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Jūratė Lajauskaitė - Homo Confusus Coach</title>
 
     <script>
       var myNav;
       window.onload = function () {
         myNav = document.getElementById("nav");
+        document.getElementById("btnApie").onclick = function () {
+          scroll(".apie-container");
+        };
+        document.getElementById("logoBtn").onclick = function () {
+          scroll(".pagrindinis-container");
+        };
       };
 
       window.onscroll = function () {
@@ -32,6 +39,17 @@
         }
       };
     </script>
+
+    <script>
+      function scroll(scrollTo) {
+        $("html,body").animate(
+          {
+            scrollTop: $(scrollTo).offset().top,
+          },
+          "slow"
+        );
+      }
+    </script>
   </head>
 
   <body>
@@ -39,10 +57,10 @@
       <nav>
         <ul>
           <li class="logo">
-            <a href="logo">Jūratė Lajauskaitė</a>
+            <button type="button" id="logoBtn">Jūratė Lajauskaitė</button>
           </li>
           <li>
-            <a href="#">Apie</a>
+            <button type="button" id="btnApie">Apie</button>
           </li>
           <li>
             <a
@@ -50,6 +68,9 @@
               target="blank"
               >Pradėkime</a
             >
+          </li>
+          <li>
+            <button type="button" id="btnKazkas">Kažkas</button>
           </li>
         </ul>
       </nav>
