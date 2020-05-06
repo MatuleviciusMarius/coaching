@@ -65,11 +65,11 @@ nav li :hover {
   margin-top: 5%;
   vertical-align: middle;
   text-align: center;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #dedede;
-  background-image: url("photos/Juratenew.png");
+  background-image: url("photos/Jurate-4.png");
+  background-size: 50%;
   height: 92.7%;
   overflow: hidden;
 }
@@ -78,6 +78,7 @@ nav li :hover {
   padding-bottom: 11px;
   margin: 0;
   padding: 0;
+  margin-right: 10%;
   font-weight: 400;
   font-family: "Prata", serif;
   color: #393f43;
@@ -89,6 +90,7 @@ nav li :hover {
 
 .pagrindinis-container h2 {
   margin: 0;
+  margin-right: 10%;
   font-weight: 400;
   font-family: "Prata", serif;
   color: #393f43;
@@ -98,16 +100,68 @@ nav li :hover {
   top: 30%;
 }
 
-.pagrindinis-container a {
-  margin: 0;
-  font-weight: 400;
-  font-family: "Prata", serif;
+/* link animation */
+
+.cl-effect-21 a {
   text-decoration: none;
-  color: #393f43;
-  position: relative;
-  font-size: 20px;
-  top: 40%;
+  margin-right: 10%;
+  padding: 10px;
   color: goldenrod;
+  font-weight: 700;
+  text-shadow: none;
+  font-family: "Prata", serif;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+  top: 40%;
+  font-size: 20px;
+  position: relative;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.cl-effect-21 a::before {
+  top: 0;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.cl-effect-21 a::after {
+  bottom: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+  color: #fff;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 /* Apie ekranas*/
@@ -117,11 +171,11 @@ nav li :hover {
   padding: 0;
   margin: 0;
   vertical-align: middle;
-  background-size: contain;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: whitesmoke;
-  background-image: url("photos/Jurate-1.jpg");
+  background-image: url("photos/Jurate-1.png");
   height: 100%;
   overflow: hidden;
 }
@@ -156,11 +210,11 @@ nav li :hover {
   padding: 0;
   margin: 0;
   vertical-align: middle;
-  background-size: contain;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: whitesmoke;
-  background-image: url("photos/Jurate-5.jpg");
+  background-image: url("photos/Jurate-5.png");
   height: 100%;
   overflow: hidden;
 }
@@ -186,4 +240,34 @@ nav li :hover {
   line-height: 50px;
   position: relative;
   top: 30%;
+}
+
+/*Footer*/
+
+footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+footer li img {
+  max-width: 45px;
+  margin: 10px;
+}
+
+.border {
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  border-color: goldenrod;
+  border-left: none;
+  border-right: none;
+  margin-left: 20%;
+  margin-right: 5%;
 }
