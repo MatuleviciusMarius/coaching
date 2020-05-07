@@ -79,6 +79,7 @@ nav li :hover {
   background-size: 50%;
   height: 92.7%;
   overflow: hidden;
+  width: 100%;
 }
 
 .pagrindinis-container h1 {
@@ -120,7 +121,7 @@ nav li :hover {
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   transition: color 0.3s;
-  top: 40%;
+  top: 50%;
   font-size: 20px;
   position: relative;
 }
@@ -171,13 +172,15 @@ nav li :hover {
   transform: translateY(0px);
 }
 
+/* arrow animation */
+
 .arrow {
   font-size: 40px;
   color: rgb(92, 92, 92);
   margin-left: 9px;
-  opacity: 50%;
+  opacity: 80%;
   text-decoration: none;
-  top: 70%;
+  top: 60%;
   position: relative;
   padding-right: 10%;
   display: block;
