@@ -168,6 +168,30 @@ nav li :hover {
   transform: translateY(0px);
 }
 
+.arrow {
+  font-size: 50px;
+  color: goldenrod;
+  margin-left: 9px;
+  text-decoration: none;
+  top: 70%;
+  position: relative;
+  padding-right: 10%;
+  display: block;
+  animation: MoveUpDown 1s linear infinite;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+}
+
 /* Apie ekranas*/
 
 .apie-container {
