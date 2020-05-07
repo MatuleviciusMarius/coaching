@@ -54,12 +54,15 @@ button {
 nav li :hover {
   color: goldenrod;
   border-bottom: 1px solid goldenrod !important;
-  transition: 0.2s;
+  transition: 0.2s ease-in;
 }
 
 .logo {
+  font-family: "Roboto", sans-serif;
   float: left;
   margin: 0 0 0 10px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 /* Main Screen */
@@ -169,15 +172,16 @@ nav li :hover {
 }
 
 .arrow {
-  font-size: 50px;
-  color: goldenrod;
+  font-size: 40px;
+  color: rgb(92, 92, 92);
   margin-left: 9px;
+  opacity: 50%;
   text-decoration: none;
   top: 70%;
   position: relative;
   padding-right: 10%;
   display: block;
-  animation: MoveUpDown 1s linear infinite;
+  animation: MoveUpDown 2s linear infinite;
   left: 0;
   bottom: 0;
 }
@@ -285,17 +289,27 @@ footer li {
 }
 
 footer li img {
-  max-width: 45px;
+  max-width: 35px;
   margin: 10px;
 }
 
-.border {
-  border-style: solid;
-  border-width: 2px;
-  display: inline-block;
-  border-color: goldenrod;
-  border-left: none;
-  border-right: none;
-  margin-left: 20%;
-  margin-right: 5%;
+/* navigation left */
+
+.navigationLeft {
+  position: fixed;
+  top: 50%;
+  background-color: rgb(212, 212, 212);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navigationLeft img {
+  width: 35px;
+  margin: 7px;
+}
+
+.imgExpand :hover {
+  height: 60px;
+  animation: 1s linear;
+  color: #dedede;
 }

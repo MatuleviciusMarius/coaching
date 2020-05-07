@@ -11,49 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="photos/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Jūratė Lajauskaitė - Homo Confusus Coach</title>
-
-    <script>
-      var myNav;
-      window.onload = function () {
-        myNav = document.getElementById("nav");
-        document.getElementById("btnApie").onclick = function () {
-          scroll(".apie-container");
-        };
-        document.getElementById("logoBtn").onclick = function () {
-          scroll(".pagrindinis-container");
-        };
-
-        document.getElementById("arrowPagrindinis").onclick = function () {
-          scroll(".apie-container");
-        };
-      };
-
-      window.onscroll = function () {
-        "use strict";
-        if (
-          document.body.scrollTop >= 50 ||
-          document.documentElement.scrollTop >= 50
-        ) {
-          myNav.classList.add("scroll");
-        } else {
-          myNav.classList.remove("scroll");
-        }
-      };
-    </script>
-
-    <script>
-      function scroll(scrollTo) {
-        $("html,body").animate(
-          {
-            scrollTop: $(scrollTo).offset().top,
-          },
-          "slow"
-        );
-      }
-    </script>
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -61,7 +26,9 @@
       <nav>
         <ul>
           <li class="logo">
-            <button type="button" id="logoBtn">Jūratė Lajauskaitė</button>
+            <button type="button" id="logoBtn">
+              <b>JŪRATĖ</b> LAJAUSKAITĖ
+            </button>
           </li>
           <li>
             <button type="button" id="btnApie">Apie</button>
@@ -80,9 +47,21 @@
       </nav>
     </header>
 
+    <nav class="navigationLeft">
+      <a href="fb"><img src="photos/facebookLogo.svg" alt="facebook" /></a>
+      <br />
+      <a href="mss"><img src="photos/messengerLogo.png" alt="messenger" /></a>
+      <br />
+      <a href="linkedin"
+        ><img src="photos/linkedinLogo.png" alt="linkedin"
+      /></a>
+      <br />
+      <a href=""><img src="" alt="" /></a>
+    </nav>
+
     <div class="pagrindinis-container">
-      <h1>Koačingas</h1>
-      <h2>aiškumo, aiškumo ir kažkastai kažkastai</h2>
+      <h1>Koučingas</h1>
+      <h2>aiškumo, atsakymų ir sprendimų linkme</h2>
       <span class="cl-effect-21">
         <a
           href="https://www.facebook.com/messages/t/jurate.lajauskaite"
@@ -98,11 +77,11 @@
         <span style="color: #a89078;"> Jūratė </span>
       </h1>
       <h2>
-        Ericson Coaching International sertifikato koučerė <br />
-        ICF - International Coaching Federation Global Kažkas <br />
+        Erickson Coaching International sertifikuota koučerė <br />
+        ICF International Coaching Federation Global narė <br />
         ICF Lithuania narė <br />
-        LUMA- Lietuvos Universitetų Moterų Asociacijos narė <br />
-        Daugiau (Nuoroda į Kažkas)
+        LUMA Lietuvos Universitetų Moterų Asociacijos narė <br />
+        <a href="#" style="color: black;">Daugiau</a>
       </h2>
     </div>
 
