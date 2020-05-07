@@ -1,4 +1,5 @@
 var myNav;
+var bottomTextBox;
 window.onload = function () {
   myNav = document.getElementById("nav");
   document.getElementById("btnApie").onclick = function () {
@@ -11,6 +12,10 @@ window.onload = function () {
   document.getElementById("arrowPagrindinis").onclick = function () {
     scroll(".apie-container");
   };
+
+  this.bottomTextBox = document.getElementById("bottomText");
+
+  document.getElementById("bottomTextButton").onclick = this.closeButton;
 };
 
 window.onscroll = function () {
@@ -20,6 +25,7 @@ window.onscroll = function () {
     document.documentElement.scrollTop >= 50
   ) {
     myNav.classList.add("scroll");
+    bottomTextBox.classList.add("displayInlineBlock");
   } else {
     myNav.classList.remove("scroll");
   }
@@ -32,4 +38,8 @@ function scroll(scrollTo) {
     },
     "slow"
   );
+}
+
+function closeButton() {
+  bottomTextBox.remove("displayInlineBlock");
 }

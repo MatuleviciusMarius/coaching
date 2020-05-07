@@ -313,3 +313,34 @@ footer li img {
   animation: 1s linear;
   color: #dedede;
 }
+
+/* bottom text */
+
+.bottomText {
+  color: white;
+  width: 100%;
+  text-align: center;
+  background-color: #393f43;
+  position: fixed;
+  bottom: 0;
+  display: none;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+  animation: appear 1s linear;
+}
+
+.bottomTextBtn {
+  float: right;
+  color: white;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
