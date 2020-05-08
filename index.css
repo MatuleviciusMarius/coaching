@@ -199,6 +199,19 @@ nav li :hover {
   }
 }
 
+.textAppear {
+  animation: textAppear 1.5s ease-in;
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Apie ekranas*/
 
 .apie-container {
