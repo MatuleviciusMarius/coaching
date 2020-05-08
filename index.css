@@ -252,6 +252,7 @@ nav li :hover {
   background-image: url("photos/Jurate-5.png");
   height: 100%;
   overflow: hidden;
+  background-color: #dedede;
 }
 
 .pradekime-container h1 {
