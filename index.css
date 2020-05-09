@@ -389,15 +389,14 @@ footer li img {
   }
 
   .apie-container h2 {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 2%;
     text-align: left;
     font-size: 1.3rem;
     position: relative;
     top: 10%;
-    width: 80%;
+    width: 96% !important;
     padding: 0;
-    line-height: 2rem;
+    line-height: 2.2rem;
     width: 100%;
   }
 
