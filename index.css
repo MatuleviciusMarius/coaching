@@ -389,21 +389,29 @@ footer li img {
   }
 
   .apie-container h2 {
+    margin-left: 10px;
+    text-align: left;
     font-size: 1rem;
     position: relative;
-    top: 0%;
+    top: 10%;
     width: 80%;
-    margin: 0;
     padding: 0;
-    line-height: 20px;
+    line-height: 30px;
     width: 100%;
   }
 
   .apie-container h1 {
     position: relative;
-    top: 0;
+    top: 10%;
     font-size: 2rem;
     width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .apie-container h2 a {
+    display: block;
+    text-align: center;
   }
 
   .apie-container {
@@ -421,7 +429,7 @@ footer li img {
   .pradekime-container h1 {
     position: relative;
     font-size: 2rem;
-    top: 0;
+    top: 10%;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -430,7 +438,7 @@ footer li img {
   .pradekime-container h2 {
     font-size: 1rem;
     position: relative;
-    top: 0%;
+    top: 10%;
     width: 100%;
   }
 
