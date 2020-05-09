@@ -111,7 +111,7 @@ nav li :hover {
 /* link animation */
 
 .cl-effect-21 a {
-  animation: textAppear 1.5s ease-in;
+  animation: textAppear 2s ease-in;
   text-decoration: none;
   margin-right: 10%;
   padding: 10px;
@@ -199,7 +199,7 @@ nav li :hover {
 }
 
 .textAppear {
-  animation: textAppear 1.5s ease-in;
+  animation: textAppear 2s ease-in;
 }
 
 @keyframes textAppear {
@@ -370,24 +370,45 @@ footer li img {
 @media (max-width: 400px) {
   .pagrindinis-container {
     height: 100%;
-    background-size: 100%;
+    background-size: 130%;
+  }
+
+  .pagrindinis-container h1 {
+    top: 15%;
+    margin: 0;
+  }
+
+  .pagrindinis-container h2 {
+    top: 15%;
+    margin: 0;
+  }
+
+  .cl-effect-21 {
+    top: 20% !important;
+    margin: 0;
   }
 
   .apie-container h2 {
     font-size: 1rem;
     position: relative;
-    top: 10%;
+    top: 0%;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    width: 100%;
   }
 
   .apie-container h1 {
     position: relative;
-    top: 10%;
+    top: 0;
     font-size: 2rem;
+    width: 100%;
   }
 
   .apie-container {
     height: 100%;
-    background-size: 100%;
+    background-size: 130%;
   }
   .arrow {
     display: none;
@@ -399,18 +420,22 @@ footer li img {
 
   .pradekime-container h1 {
     position: relative;
-    top: 30%;
     font-size: 2rem;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .pradekime-container h2 {
     font-size: 1rem;
     position: relative;
-    top: 30%;
+    top: 0%;
+    width: 100%;
   }
 
   .pradekime-container {
-    background-size: 100%;
+    background-size: 130%;
   }
 
   nav ul li {
@@ -420,11 +445,16 @@ footer li img {
   .logo {
     display: block !important;
   }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /* tablet */
 
-@media (max-width: 800px) {
+@media (min-width: 401px) and (max-width: 800px) {
   .arrow {
     display: none;
   }
