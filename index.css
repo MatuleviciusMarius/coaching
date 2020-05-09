@@ -390,20 +390,21 @@ footer li img {
 
   .apie-container h2 {
     margin-left: 10px;
+    margin-right: 10px;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.3rem;
     position: relative;
     top: 10%;
     width: 80%;
     padding: 0;
-    line-height: 30px;
+    line-height: 2rem;
     width: 100%;
   }
 
   .apie-container h1 {
     position: relative;
     top: 10%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 100%;
     padding: 0;
     margin: 0;
