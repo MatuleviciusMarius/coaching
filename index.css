@@ -320,6 +320,7 @@ footer li img {
   background-color: rgb(212, 212, 212);
   padding-top: 15px;
   padding-bottom: 15px;
+  z-index: 9000;
 }
 
 .navigationLeft img {
@@ -363,6 +364,8 @@ footer li img {
     opacity: 100;
   }
 }
+
+/* phone */
 
 @media (max-width: 400px) {
   .pagrindinis-container {
@@ -416,5 +419,44 @@ footer li img {
 
   .logo {
     display: block !important;
+  }
+}
+
+/* tablet */
+
+@media (max-width: 800px) {
+  .arrow {
+    display: none;
+  }
+
+  .apie-container h1 {
+    top: 10%;
+  }
+
+  .apie-container h2 {
+    top: 10%;
+  }
+
+  .apie-container {
+    background-size: 90%;
+  }
+
+  .pagrindinis-container {
+    background-size: 90%;
+  }
+
+  .pradekime-container {
+    background-size: 90%;
+    height: 90vh;
+  }
+
+  .pradekime-container h1 {
+    top: 10%;
+    padding-right: 15%;
+  }
+
+  .pradekime-container h2 {
+    top: 10%;
+    padding-right: 15%;
   }
 }
