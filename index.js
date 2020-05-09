@@ -13,6 +13,10 @@ window.onload = function () {
     scroll(".apie-container");
   };
 
+  document.getElementById("arrowApie").onclick = function () {
+    scroll(".pradekime-container");
+  };
+
   this.bottomTextBox = document.getElementById("bottomText");
 
   document.getElementById("bottomTextButton").onclick = this.closeButton;

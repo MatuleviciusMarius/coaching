@@ -61,7 +61,7 @@ nav li :hover {
   font-family: "Roboto", sans-serif;
   float: left;
   margin: 0 0 0 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -111,6 +111,7 @@ nav li :hover {
 /* link animation */
 
 .cl-effect-21 a {
+  animation: textAppear 1.5s ease-in;
   text-decoration: none;
   margin-right: 10%;
   padding: 10px;
@@ -180,13 +181,11 @@ nav li :hover {
   margin-left: 9px;
   opacity: 80%;
   text-decoration: none;
-  top: 60%;
   position: relative;
   padding-right: 10%;
   display: block;
   animation: MoveUpDown 2s linear infinite;
-  left: 0;
-  bottom: 0;
+  top: 60%;
 }
 
 @keyframes MoveUpDown {
@@ -315,6 +314,7 @@ footer li img {
 /* navigation left */
 
 .navigationLeft {
+  animation: textAppear 1.5s ease-in;
   position: fixed;
   top: 50%;
   background-color: rgb(212, 212, 212);
@@ -323,8 +323,8 @@ footer li img {
 }
 
 .navigationLeft img {
-  width: 35px;
-  margin: 7px;
+  width: 30px;
+  margin: 10px;
 }
 
 .imgExpand :hover {
@@ -361,5 +361,60 @@ footer li img {
   }
   100% {
     opacity: 100;
+  }
+}
+
+@media (max-width: 400px) {
+  .pagrindinis-container {
+    height: 100%;
+    background-size: 100%;
+  }
+
+  .apie-container h2 {
+    font-size: 1rem;
+    position: relative;
+    top: 10%;
+  }
+
+  .apie-container h1 {
+    position: relative;
+    top: 10%;
+    font-size: 2rem;
+  }
+
+  .apie-container {
+    height: 100%;
+    background-size: 100%;
+  }
+  .arrow {
+    display: none;
+  }
+
+  .navigationLeft {
+    display: none;
+  }
+
+  .pradekime-container h1 {
+    position: relative;
+    top: 30%;
+    font-size: 2rem;
+  }
+
+  .pradekime-container h2 {
+    font-size: 1rem;
+    position: relative;
+    top: 30%;
+  }
+
+  .pradekime-container {
+    background-size: 100%;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .logo {
+    display: block !important;
   }
 }
