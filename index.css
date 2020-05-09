@@ -410,8 +410,7 @@ footer li img {
   }
 
   .apie-container h2 a {
-    display: block;
-    text-align: center;
+    color: #393f43;
   }
 
   .apie-container {
@@ -438,8 +437,9 @@ footer li img {
   .pradekime-container h2 {
     font-size: 1rem;
     position: relative;
-    top: 10%;
+    top: 15%;
     width: 100%;
+    line-height: 40px;
   }
 
   .pradekime-container {
