@@ -82,6 +82,14 @@ nav li :hover {
   width: 100%;
 }
 
+.smoke-video {
+  width: 60%;
+  height: 50%;
+  position: fixed;
+  left: 10%;
+  top: 20%;
+}
+
 .pagrindinis-container h1 {
   padding-bottom: 11px;
   margin: 0;
