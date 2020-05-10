@@ -85,7 +85,7 @@ nav li :hover {
 .smoke-video {
   width: 60%;
   height: 50%;
-  position: fixed;
+  position: absolute;
   left: 10%;
   top: 20%;
 }
