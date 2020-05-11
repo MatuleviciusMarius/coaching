@@ -87,7 +87,12 @@ nav li :hover {
   height: 50%;
   position: absolute;
   left: 10%;
-  top: 27%;
+  top: 26%;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .pagrindinis-container h1 {
