@@ -1,31 +1,5 @@
 var myNav;
 var bottomTextBox;
-window.onload = function () {
-  $(function () {
-    AOS.init();
-  });
-
-  this.removeVideoInSafari();
-  myNav = document.getElementById("nav");
-  document.getElementById("btnApie").onclick = function () {
-    scroll(".apie-container");
-  };
-  document.getElementById("logoBtn").onclick = function () {
-    scroll(".pagrindinis-container");
-  };
-
-  document.getElementById("arrowPagrindinis").onclick = function () {
-    scroll(".apie-container");
-  };
-
-  document.getElementById("arrowApie").onclick = function () {
-    scroll(".pradekime-container");
-  };
-
-  this.bottomTextBox = document.getElementById("bottomText");
-
-  document.getElementById("bottomTextButton").onclick = this.closeButton;
-};
 
 window.onscroll = function () {
   "use strict";
@@ -57,6 +31,37 @@ function removeVideoInSafari() {
     video.remove();
   }
 }
+$(document).ready(function () {
+  bottomTextBox = document.getElementById("bottomTextButton");
+  myNav = $("#nav")[0];
+  AOS.init();
+  removeVideoInSafari();
+
+  bottomTextBox.onclick = this.closeButton;
+
+  document.getElementById("btnApie").onclick = function () {
+    scroll(".apie-container");
+  };
+  document.getElementById("logoBtn").onclick = function () {
+    scroll(".pagrindinis-container");
+  };
+
+  document.getElementById("arrowPagrindinis").onclick = function () {
+    scroll(".apie-container");
+  };
+
+  document.getElementById("arrowApie").onclick = function () {
+    scroll(".pradekime-container");
+  };
+
+  document.getElementById("bottomTextButton").onclick = this.closeButton;
+
+  $(".carousel").slick({
+    slidesToShow: 1,
+    dots: true,
+    centerMode: true,
+  });
+});
 
 function closeButton() {
   bottomTextBox.remove("displayInlineBlock");
