@@ -61,7 +61,6 @@ $(document).ready(function () {
 
 function createSlide() {
   var domWidth = window.outerWidth;
-  alert(domWidth);
   if (domWidth > 480) {
     new Splide(".splide", {
       type: "loop",
