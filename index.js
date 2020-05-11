@@ -56,12 +56,34 @@ $(document).ready(function () {
 
   document.getElementById("bottomTextButton").onclick = this.closeButton;
 
-  $(".carousel").slick({
-    slidesToShow: 1,
-    dots: true,
-    centerMode: true,
-  });
+  createSlide();
 });
+
+function createSlide() {
+  var domWidth = window.outerWidth;
+  alert(domWidth);
+  if (domWidth > 480) {
+    new Splide(".splide", {
+      type: "loop",
+      padding: {
+        right: "20%",
+        left: "20%",
+      },
+      lazyLoad: true,
+      drag: true,
+      focus: "center",
+      speed: 800,
+      lazyLoad: "nearby",
+    }).mount();
+  } else {
+    new Splide(".splide", {
+      type: "fade",
+      rewind: true,
+      lazyLoad: true,
+      drag: true,
+    }).mount();
+  }
+}
 
 function closeButton() {
   bottomTextBox.remove("displayInlineBlock");
