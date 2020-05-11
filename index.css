@@ -87,7 +87,7 @@ nav li :hover {
   height: 50%;
   position: absolute;
   left: 10%;
-  top: 20%;
+  top: 27%;
 }
 
 .pagrindinis-container h1 {
@@ -375,7 +375,12 @@ footer li img {
 
 /* phone */
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .smoke-video {
+    top: 7%;
+    width: 80%;
+  }
+
   .pagrindinis-container {
     height: 100%;
     background-size: 130%;
@@ -470,7 +475,7 @@ footer li img {
 
 /* tablet */
 
-@media (min-width: 401px) and (max-width: 800px) {
+@media (min-width: 451px) and (max-width: 800px) {
   .arrow {
     display: none;
   }
