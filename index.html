@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="description" content="jūratė lajauskaite koučingas" />
     <link rel="stylesheet" href="index.css" <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,10 +84,10 @@
     </div>
 
     <div class="apie-container">
-      <h1>
+      <h1 data-aos="zoom-in" style="overflow: auto;">
         <span style="color: #a89078;"> Jūratė </span>
       </h1>
-      <h2>
+      <h2 data-aos="zoom-in" data-aos-duration="3000">
         Erickson Coaching International sertifikuota koučerė <br />
         ICF International Coaching Federation Global narė <br />
         ICF Lithuania narė <br />
@@ -108,12 +109,12 @@
     </div>
 
     <div class="pradekime-container">
-      <h1>
+      <h1 data-aos="fade-right">
         Mielieji, aš labai džiaugiuosi, <br />
         kad Jūs esate čia
       </h1>
 
-      <h2>
+      <h2 data-aos="fade-right">
         Pradėkime mūsų pažintį, <br />
         atraskime tai, kas mus artina
       </h2>
@@ -157,5 +158,9 @@
         </div>
       </ul>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+      AOS.init();
+    </script>
   </body>
 </html>

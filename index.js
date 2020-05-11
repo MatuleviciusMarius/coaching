@@ -1,6 +1,10 @@
 var myNav;
 var bottomTextBox;
 window.onload = function () {
+  $(function () {
+    AOS.init();
+  });
+
   this.removeVideoInSafari();
   myNav = document.getElementById("nav");
   document.getElementById("btnApie").onclick = function () {
