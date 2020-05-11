@@ -1,6 +1,7 @@
 var myNav;
 var bottomTextBox;
 window.onload = function () {
+  this.removeVideoInSafari();
   myNav = document.getElementById("nav");
   document.getElementById("btnApie").onclick = function () {
     scroll(".apie-container");
@@ -44,11 +45,13 @@ function scroll(scrollTo) {
   );
 }
 
-var ua = navigator.userAgent.toLowerCase();
-var is_safari = ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0;
-if (is_safari) {
-  var video = document.getElementById("#smokeVideo");
-  video.classList.add("smoke-video-display-none");
+function removeVideoInSafari() {
+  var ua = navigator.userAgent.toLowerCase();
+  var is_safari = ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0;
+  if (is_safari) {
+    var video = document.getElementById("#smokeVideo");
+    video.classList.add("smoke-video-display-none");
+  }
 }
 
 function closeButton() {

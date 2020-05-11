@@ -96,7 +96,7 @@ nav li :hover {
 }
 
 .smoke-video-display-none {
-  display: none;
+  display: none !important;
 }
 
 .pagrindinis-container h1 {
