@@ -95,6 +95,10 @@ nav li :hover {
   -o-user-select: none;
 }
 
+.smoke-video-display-none {
+  display: none;
+}
+
 .pagrindinis-container h1 {
   padding-bottom: 11px;
   margin: 0;

@@ -1,7 +1,6 @@
 var myNav;
 var bottomTextBox;
 window.onload = function () {
-  playVideo();
   myNav = document.getElementById("nav");
   document.getElementById("btnApie").onclick = function () {
     scroll(".apie-container");
@@ -45,18 +44,13 @@ function scroll(scrollTo) {
   );
 }
 
-function playVideo() {
-  var ua = navigator.userAgent.toLowerCase();
-  var is_safari = ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0;
-  if (is_safari) {
-    alert("safari");
-    var video = document.getElementById("#smokeVideo");
-    setTimeout(function () {
-      video.play();
-    }, 50);
-  }
+var ua = navigator.userAgent.toLowerCase();
+var is_safari = ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0;
+if (is_safari) {
+  var video = document.getElementById("#smokeVideo");
+  video.classList.add("smoke-video-display-none");
+}
 
-  function closeButton() {
-    bottomTextBox.remove("displayInlineBlock");
-  }
+function closeButton() {
+  bottomTextBox.remove("displayInlineBlock");
 }
