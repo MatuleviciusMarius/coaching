@@ -244,7 +244,7 @@ nav li :hover {
   font-size: 3.125rem;
   line-height: 4.0625rem;
   position: relative;
-  top: 30%;
+  top: 10%;
 }
 
 .apie-container h2 {
@@ -255,7 +255,7 @@ nav li :hover {
   font-size: 30px;
   line-height: 50px;
   position: relative;
-  top: 30%;
+  top: 10%;
 }
 
 /* Pradėkime skiltis */
@@ -352,6 +352,14 @@ footer li img {
   position: fixed;
   bottom: 0;
   display: none;
+}
+
+.bottomText a {
+  margin: 0.5em;
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2em;
 }
 
 .displayInlineBlock {
