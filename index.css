@@ -484,6 +484,11 @@ footer li img {
 /* tablet */
 
 @media (min-width: 451px) and (max-width: 800px) {
+  .smoke-video {
+    top: 15%;
+    width: 70%;
+  }
+
   .arrow {
     display: none;
   }
