@@ -317,12 +317,24 @@ nav li :hover {
   font-size: 2rem;
 }
 
+.splide {
+  display: block;
+}
+
+.splide-container {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  height: 100vh;
+  vertical-align: text-bottom;
+}
+
 .splide__slide {
   text-align: center;
 }
 
 .splide__slide img {
   width: 95%;
+  filter: blur(3px);
 }
 
 .splide__slide p {
