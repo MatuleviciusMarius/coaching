@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="lt">
   <head>
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Tingle popup-->
+    <link rel="stylesheet" href="Tingle/tingle.css" />
+
+    <!--Splide-->
     <script src="dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="dist/css/splide.min.css" />
 
+    <!--swiperjs-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!--Fit Text-->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.fittext.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <meta name="description" content="jūratė lajauskaite koučingas" />
-    <link rel="stylesheet" href="index.css" <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -21,10 +36,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <!--Fonts-->
+
+    <link rel="stylesheet" href="index.css" <meta charset="UTF-8" />
+    <meta name="description" content="jūratė lajauskaite koučingas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="photos/favicon.ico" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Jūratė Lajauskaitė - Homo Confusus Coach</title>
     <script src="index.js"></script>
+    <script src="modals.js"></script>
   </head>
 
   <body>
@@ -123,44 +143,54 @@
         atraskime tai, kas mus artina
       </h2>
     </div>
-    <div class="splide-container">
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <img src="photos/background.jpg" alt="" />
-              <p class="resize" id="resize">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                nec orci vulputate, molestie metus eget, pretium enim. Quisque
-                maximus ex.
-              </p>
-            </li>
-            <li class="splide__slide">
-              <img src="photos/background.jpg" alt="" />
-              <p class="resize">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                nec orci vulputate, molestie metus eget, pretium enim. Quisque
-                maximus ex.
-              </p>
-            </li>
-            <li class="splide__slide">
-              <img src="photos/background.jpg" alt="" />
-              <p class="resize">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                nec orci vulputate, molestie metus eget, pretium enim. Quisque
-                maximus ex.
-              </p>
-            </li>
-          </ul>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="alisaStebukluSalyjePhotos/EsmiuEsme.png" />
+        <div class="text">Caption Text</div>
+        <div class="mainText" onclick="esmiuEsme.open()">ESMIŲ ESMĖ</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="alisaStebukluSalyjePhotos/Patiketi.png" />
+        <div class="text">Caption Text</div>
+        <div class="mainText" onclick="patiketi.open()">PATIKĖTI</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="alisaStebukluSalyjePhotos/isduosiuTauPaslapti.png" />
+        <div class="text">Caption Text</div>
+        <div class="mainText" onclick="isduosiuTauPaslapti.open()">
+          IŠDUOSIU TAU PASLAPTĮ
         </div>
       </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
     <div class="bottomText" id="bottomText">
       <a href="https://m.me/100321648345259" target="blank"
         >Provokuoja mąstyti</a
       >
-      <button class="bottomTextBtn" id="bottomTextButton">X</button>
+      <button
+        class="bottomTextBtn"
+        id="bottomTextButton"
+        onclick="closeButton()"
+      >
+        X
+      </button>
     </div>
 
     <footer class="footerContainer">
@@ -193,10 +223,10 @@
         </div>
       </ul>
     </footer>
-    <script></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js">
       AOS.init();
     </script>
+    <script src="Tingle/tingle.js"></script>
   </body>
 </html>

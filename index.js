@@ -23,6 +23,10 @@ function scroll(scrollTo) {
   );
 }
 
+function closeButton() {
+  bottomTextBox.remove("displayInlineBlock");
+}
+
 function removeVideoInSafari() {
   var ua = navigator.userAgent.toLowerCase();
   var is_safari = ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0;
@@ -31,9 +35,11 @@ function removeVideoInSafari() {
     video.remove();
   }
 }
+
 $(document).ready(function () {
   bottomTextBox = document.getElementById("bottomTextButton");
   myNav = $("#nav")[0];
+  bottomTextBox = $("#bottomText")[0];
   AOS.init();
   removeVideoInSafari();
 
@@ -54,71 +60,37 @@ $(document).ready(function () {
     scroll(".pradekime-container");
   };
 
-  document.getElementById("bottomTextButton").onclick = this.closeButton;
-
-  createSlide();
+  showSlides(slideIndex);
 });
 
-function createSlide() {
-  var domWidth = window.outerWidth;
-  if (domWidth > 480) {
-    new Splide(".splide", {
-      type: "loop",
-      padding: {
-        right: "20%",
-        left: "20%",
-      },
-      lazyLoad: true,
-      drag: true,
-      speed: 800,
-      lazyLoad: "nearby",
-      gap: 0,
-      focus: "center",
-      height: "50%",
-    }).mount();
-  } else {
-    new Splide(".splide", {
-      type: "fade",
-      rewind: true,
-      lazyLoad: true,
-      drag: true,
-      autoplay: true,
-    }).mount();
-  }
+var slideIndex = 1;
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
 
-function closeButton() {
-  bottomTextBox.remove("displayInlineBlock");
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
 }
 
-var autoSizeText;
-
-autoSizeText = function () {
-  var el, elements, _i, _len, _results;
-  elements = $(".resize");
-  console.log(elements);
-  if (elements.length < 0) {
-    return;
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
   }
-  _results = [];
-  for (_i = 0, _len = elements.length; _i < _len; _i++) {
-    el = elements[_i];
-    _results.push(
-      (function (el) {
-        var resizeText, _results1;
-        resizeText = function () {
-          var elNewFontSize;
-          elNewFontSize =
-            parseInt($(el).css("font-size").slice(0, -2)) - 1 + "px";
-          return $(el).css("font-size", elNewFontSize);
-        };
-        _results1 = [];
-        while (el.scrollHeight > el.offsetHeight) {
-          _results1.push(resizeText());
-        }
-        return _results1;
-      })(el)
-    );
+  if (n < 1) {
+    slideIndex = slides.length;
   }
-  return _results;
-};
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
