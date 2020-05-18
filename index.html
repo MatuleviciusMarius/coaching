@@ -4,9 +4,6 @@
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!--Tingle popup-->
-    <link rel="stylesheet" href="Tingle/tingle.css" />
-
     <!--Splide-->
     <script src="dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="dist/css/splide.min.css" />
@@ -143,26 +140,40 @@
         atraskime tai, kas mus artina
       </h2>
     </div>
-
+    <br />
+    <br />
     <!-- Slideshow container -->
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
         <img src="alisaStebukluSalyjePhotos/EsmiuEsme.png" />
-        <div class="text">“Alisa Stebuklų šalyje”</div>
-        <div class="mainText" onclick="esmiuEsme.open()">ESMIŲ ESMĖ</div>
+        <p class="text">“Alisa Stebuklų šalyje”</p>
+        <p
+          class="mainText otherText"
+          id="kitasTextas"
+          style="text-align: left; padding-left: 20px;"
+        >
+          <i>Alisa</i>: Norėjau paklausti kuriuo keliu eit. <br />
+          <i>Češyro katinas</i>: Nelygu kur nori nueit. <br />
+          <i>Alisa</i>: Man visiškai nesvarbu, kad tik galėčiau išeiti. <br />
+          <i>Češyro katinas</i>: Jei taip, tai tau visiškai nesvarbu į kurią
+          pusę eiti.
+        </p>
+        <div class="mainText" onclick="displayOtherText(this, 'kitasTextas')">
+          ESMIŲ ESMĖ
+        </div>
       </div>
 
       <div class="mySlides fade">
         <img src="alisaStebukluSalyjePhotos/Patiketi.png" />
         <div class="text">“Alisa Stebuklų šalyje”</div>
-        <div class="mainText" onclick="patiketi.open()">PATIKĖTI</div>
+        <div class="mainText">PATIKĖTI</div>
       </div>
 
       <div class="mySlides fade">
         <img src="alisaStebukluSalyjePhotos/isduosiuTauPaslapti.png" />
         <div class="text">“Alisa Stebuklų šalyje”</div>
-        <div class="mainText" onclick="isduosiuTauPaslapti.open()">
+        <div class="mainText">
           IŠDUOSIU TAU PASLAPTĮ
         </div>
       </div>
@@ -179,6 +190,8 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+    <br />
+    <br />
 
     <div class="bottomText" id="bottomText">
       <a href="https://m.me/100321648345259" target="blank"

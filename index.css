@@ -215,7 +215,12 @@ nav li :hover {
 }
 
 .textAppear {
-  animation: textAppear 2s ease-in;
+  animation: textAppear 1.5s ease-in;
+}
+
+.textDisappear {
+  animation: textAppear 1.5s ease-in;
+  animation-direction: reverse;
 }
 
 @keyframes textAppear {
@@ -313,31 +318,6 @@ nav li :hover {
 
 /* carousel */
 
-.swiper-container {
-  max-height: 500px;
-  height: 80%;
-  top: 10%;
-}
-
-.swiper-slide {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.swiper-slide p {
-  color: whitesmoke;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -397,11 +377,20 @@ nav li :hover {
 .mainText {
   color: #f2f2f2;
   font-size: 2vw;
+  line-height: 4vw;
   position: absolute;
-  top: 50%;
+  cursor: pointer;
   text-align: center;
   width: 100%;
-  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 99%;
+}
+
+.otherText {
+  opacity: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -637,6 +626,12 @@ footer li img {
     margin: 0;
     padding: 0;
   }
+
+  .mainText {
+    font-size: 4vw;
+    line-height: 5vw;
+    width: 95%;
+  }
 }
 
 /* tablet */
@@ -680,5 +675,9 @@ footer li img {
   .pradekime-container h2 {
     top: 10%;
     padding-right: 15%;
+  }
+
+  .mainText {
+    font-size: 4vw;
   }
 }

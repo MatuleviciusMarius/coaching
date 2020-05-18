@@ -59,7 +59,6 @@ $(document).ready(function () {
   document.getElementById("arrowApie").onclick = function () {
     scroll(".pradekime-container");
   };
-
   showSlides(slideIndex);
 });
 
