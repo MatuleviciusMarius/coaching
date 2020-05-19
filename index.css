@@ -7,6 +7,10 @@ body {
   background-color: #dedede;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Header */
 .header {
   background: #dedede;
