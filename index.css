@@ -7,10 +7,6 @@ body {
   background-color: #dedede;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 /* Header */
 .header {
   background: #dedede;
@@ -391,6 +387,7 @@ nav li :hover {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 99%;
+  text-justify: center;
 }
 
 .otherText {
@@ -495,6 +492,7 @@ footer li img {
   bottom: 0;
   display: none;
   z-index: 999999;
+  box-sizing: border-box;
 }
 
 .bottomText a {
