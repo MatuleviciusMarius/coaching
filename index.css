@@ -532,8 +532,8 @@ footer li img {
 }
 
 .final-section p {
-  width: 65%;
-  line-height: 3.5vw;
+  width: 80%;
+  line-height: normal;
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   margin: 0;
@@ -542,13 +542,15 @@ footer li img {
   left: 50%;
   position: relative;
   transform: translateX(-50%);
-  font-size: 2vw;
+  font-size: 3em;
   filter: none !important;
 }
 
 .final-section span {
   font-family: "Open Sans", sans-serif;
   font-size: 1vw;
+  display: inline-block;
+  line-height: normal;
 }
 
 /* modal */
