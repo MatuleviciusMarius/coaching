@@ -607,13 +607,13 @@ footer li img {
 
   .apie-container h2 {
     margin-left: 2%;
-    text-align: left;
-    font-size: 6vw;
+    text-align: center;
+    font-size: 4vw;
     position: relative;
     top: 7%;
     width: 96% !important;
     padding: 0;
-    line-height: 8vw;
+    line-height: normal;
     width: 100%;
   }
 
@@ -628,7 +628,7 @@ footer li img {
 
   .apie-container h2 a {
     color: #251605;
-    font-size: 5vw;
+    font-size: 3.5vw;
   }
 
   .apie-container {
@@ -648,18 +648,18 @@ footer li img {
   .pradekime-container h1 {
     position: relative;
     font-size: 2rem;
-    top: 10%;
+    top: 15%;
     width: 100%;
     padding: 0;
     margin: 0;
   }
 
   .pradekime-container h2 {
-    font-size: 1rem;
+    font-size: 4vw;
     position: relative;
-    top: 10%;
+    top: 15%;
     width: 100%;
-    line-height: 40px;
+    line-height: normal;
   }
 
   .pradekime-container {
@@ -686,6 +686,205 @@ footer li img {
     font-size: 4vw;
     line-height: 5vw;
     width: 95%;
+  }
+
+  .dot {
+    height: 4px;
+    width: 4px;
+  }
+
+  .final-section p {
+    font-size: 5vw;
+  }
+
+  .final-section p span {
+    font-size: 2vw;
+  }
+
+  .smile_img {
+    width: 7%;
+  }
+
+  .text {
+    font-size: 2vw;
+  }
+
+  /*modules */
+  #o_is_kur_tu_zinai_other {
+    top: 60%;
+  }
+
+  #jus_galite_jas_nusidazyti_other {
+    top: 60%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #tikra_tragedija_other {
+    top: 55%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #kas_esi_tu_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #labiau_savimi_labesne_other {
+    top: 50%;
+    font-size: 2vw !important;
+    line-height: normal !important;
+  }
+
+  #mano_kelias_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #visi_geriausi_yra_tokie_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #beveik_ta_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #pagaliau_atsibudai_other {
+    top: 50%;
+    font-size: 2vw !important;
+    line-height: normal !important;
+  }
+
+  #labai_geras_iprotis_other {
+    top: 50%;
+    font-size: 2vw !important;
+    line-height: normal !important;
+  }
+
+  #vienintelis_budas_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #tokia_kaip_tu_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #kas_tuomet_busiu_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #tik_ziurek_kur_eini_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #kaip_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #niekas_sito_nezino_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #cesyro_katinas_other {
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #prizadi_kalbeti_trumpai_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #galiausiai_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #kada_kalebesi_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #sekunde_svarbi_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #turi_lygiau_minute_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #pasimokyti_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #nelaimesi_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #amzinybe_netrukus_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #laikas_amzinasis_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #tai_kas_yra_dovana_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #o_kas_pasakys_kas_yra_kas_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #lengviau_uz_neimanoma_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
+  }
+
+  #laikas_pinigai_other {
+    top: 50%;
+    font-size: 4vw !important;
+    line-height: normal !important;
   }
 }
 
