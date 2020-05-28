@@ -1,3 +1,8 @@
+@font-face {
+  font-family: rafale;
+  src: url("fonts/Rafale\ BG.otf");
+}
+
 /* Global */
 
 body {
@@ -250,30 +255,31 @@ nav li :hover {
 
 .apie-container h1 {
   padding-right: 30%;
-  padding-bottom: 11px;
   font-weight: 400;
   font-family: "Great Vibes", cursive;
   color: #f19953;
   font-size: 6rem;
   position: relative;
+  margin-bottom: 0;
   top: 10%;
 }
 
 .apie-container h2 {
   padding-right: 30%;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: rafale, sans-serif;
   color: #251605;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 1.3rem;
+  line-height: normal;
   position: relative;
   top: 10%;
+  margin: 0;
 }
 
 .daugiau-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: rafale, sans-serif;
   color: #859299 !important;
-  font-size: 25px;
+  font-size: 1.3rem;
 }
 
 /* Pradėkime skiltis */
@@ -294,34 +300,44 @@ nav li :hover {
 }
 
 .pradekime-container h1 {
-  padding-right: 30%;
-  padding-bottom: 11px;
+  padding-right: 30% !important;
   font-weight: 400;
   font-family: "Great Vibes", cursive;
   color: #251605;
-  font-size: 6rem;
+  font-size: 4rem;
   position: relative;
-  top: 30%;
+  top: 20%;
+  margin: 0;
+  padding: 0;
 }
 
 .pradekime-container h2 {
   padding-right: 30%;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: rafale, sans-serif;
   color: #251605;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 1.5rem;
+  line-height: normal;
   position: relative;
-  top: 30%;
+  top: 20%;
 }
 
 /* carousel */
 
 /* Slideshow container */
+.slideshow-space {
+  width: 100%;
+  background-color: whitesmoke;
+}
+
 .slideshow-container {
+  z-index: 999999;
+  background-color: whitesmoke;
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  padding-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Hide the images by default */
@@ -366,7 +382,6 @@ nav li :hover {
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -500,6 +515,7 @@ footer li img {
   text-decoration: none;
   color: whitesmoke;
   font-size: 2em;
+  font-family: "Great Vibes", cursive;
 }
 
 .displayInlineBlock {
@@ -523,7 +539,7 @@ footer li img {
 
 /* final section ATSPINDZIAI */
 .final-section {
-  background-color: #f2f2f2;
+  background-color: #dedede;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -626,6 +642,8 @@ footer li img {
     display: none;
   }
 
+  /* pradekime */
+
   .pradekime-container h1 {
     position: relative;
     font-size: 2rem;
@@ -638,7 +656,7 @@ footer li img {
   .pradekime-container h2 {
     font-size: 1rem;
     position: relative;
-    top: 15%;
+    top: 10%;
     width: 100%;
     line-height: 40px;
   }
