@@ -22,7 +22,7 @@ body {
   width: 100%;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
-  z-index: 10000;
+  z-index: 99999999;
 }
 
 .scroll {
@@ -328,6 +328,7 @@ nav li :hover {
 .slideshow-space {
   width: 100%;
   background-color: whitesmoke;
+  padding-bottom: 1%;
 }
 
 .slideshow-container {
