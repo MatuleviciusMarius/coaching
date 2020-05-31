@@ -131,17 +131,6 @@ nav li :hover {
 
 /* link animation */
 
-@keyframes animatedgradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .cl-effect-21 a {
   animation: textAppear 1s ease-in;
   text-decoration: none;
