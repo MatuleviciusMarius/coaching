@@ -3,10 +3,7 @@ var bottomTextBox;
 
 window.onscroll = function () {
   "use strict";
-  if (
-    document.body.scrollTop >= 50 ||
-    document.documentElement.scrollTop >= 50
-  ) {
+  if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
     myNav.classList.add("scroll");
     bottomTextBox.classList.add("displayInlineBlock");
   } else {
@@ -45,9 +42,6 @@ $(document).ready(function () {
 
   bottomTextBox.onclick = this.closeButton;
 
-  document.getElementById("btnApie").onclick = function () {
-    scroll(".apie-container");
-  };
   document.getElementById("logoBtn").onclick = function () {
     scroll(".pagrindinis-container");
   };
