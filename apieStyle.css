@@ -57,6 +57,26 @@ nav li :hover {
   font-weight: 300;
 }
 
+.kas-yra-koucingas-container {
+  height: 100vh;
+  color: #626c73;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.kas-yra-koucingas-container p {
+  position: relative;
+  width: 60%;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.kas-yra-koucingas-container span {
+  color: #393f43;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
 .apie-text-container {
   padding-top: 2%;
   color: #626c73;
