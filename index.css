@@ -1,6 +1,6 @@
 @font-face {
   font-family: rafale;
-  src: url("fonts/Rafale\ BG.otf");
+  src: url('fonts/Rafale\ BG.otf');
 }
 
 /* Global */
@@ -49,7 +49,7 @@ nav a,
 button {
   text-decoration: none;
   color: #251605;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 17px;
   border: none;
@@ -63,7 +63,7 @@ nav li :hover {
 }
 
 .logo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   float: left;
   margin: 0 0 0 10px;
   font-size: 16px;
@@ -80,7 +80,7 @@ nav li :hover {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #dedede;
-  background-image: url("photos/Jurate-4.png");
+  background-image: url('photos/Jurate-4.png');
   background-size: 50%;
   height: 92.7%;
   overflow: hidden;
@@ -121,7 +121,7 @@ nav li :hover {
   margin: 0;
   margin-right: 10%;
   font-weight: 100;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #251605;
   font-size: 30px;
   line-height: 50px;
@@ -139,7 +139,7 @@ nav li :hover {
   color: #f19953;
   font-weight: 700;
   text-shadow: none;
-  font-family: "Prata", serif;
+  font-family: 'Prata', serif;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   transition: color 0.3s;
@@ -202,7 +202,7 @@ nav li :hover {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: whitesmoke;
-  background-image: url("photos/Jurate-1.png");
+  background-image: url('photos/Jurate-1.png');
   height: 100%;
   overflow: hidden;
 }
@@ -210,7 +210,7 @@ nav li :hover {
 .apie-container h1 {
   padding-right: 30%;
   font-weight: 400;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
   color: #f19953;
   font-size: 6rem;
   position: relative;
@@ -247,7 +247,7 @@ nav li :hover {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: whitesmoke;
-  background-image: url("photos/Jurate-5.png");
+  background-image: url('photos/Jurate-5.png');
   height: 100%;
   overflow: hidden;
   background-color: #dedede;
@@ -256,7 +256,7 @@ nav li :hover {
 .pradekime-container h1 {
   padding-right: 30% !important;
   font-weight: 400;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
   color: #251605;
   font-size: 4rem;
   position: relative;
@@ -470,7 +470,7 @@ footer li img {
   text-decoration: none;
   color: whitesmoke;
   font-size: 2em;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
 }
 
 .displayInlineBlock {
@@ -498,14 +498,13 @@ footer li img {
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2%;
 }
 
 .final-section p {
   width: 80%;
   line-height: normal;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
   font-weight: 400;
   margin: 0;
   color: #251605;
@@ -518,10 +517,14 @@ footer li img {
 }
 
 .final-section span {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1vw;
   display: inline-block;
   line-height: normal;
+}
+
+.final-section img {
+  max-height: 20%;
 }
 
 /* modal */
